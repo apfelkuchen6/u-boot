@@ -51,6 +51,39 @@ config TARGET_NANOPCT6_RK3588
 	  Power: 5.5*2.1mm DC Jack, 12VDC input
 	  Dimensions: 110x80x1.6mm (without case) / 86x114.5x30mm (with case)
 
+config TARGET_NANOPI_R6C_RK3588S
+	bool "FriendlyElec NanoPi R6C"
+	select BOARD_LATE_INIT
+	help
+	  The NanoPi R6C is a SBC by FriendlyElec based on the Rockchip
+	  RK3588s.
+	  It comes with 4GB or 8GB of RAM, a microSD card slot, optional 32GB
+	  eMMC storage, one M.2 M-Key connector, one RTL8211F 1GbE and one
+	  RTL8125 2.5GbE Ethernet port, one USB 2.0 Type-A and one USB 3.0
+	  Type-A port, a HDMI port, a 30-pin GPIO header as well as some
+	  buttons and LEDs.
+
+config TARGET_NANOPI_R6S_RK3588S
+	bool "FriendlyElec NanoPi R6S"
+	select BOARD_LATE_INIT
+	help
+	  The NanoPi R6S is a SBC by FriendlyElec based on the Rockchip
+	  RK3588s.
+	  It comes with 4GB or 8GB of RAM, a microSD card slot, 32GB eMMC
+	  storage, one RTL8211F 1GbE and two RTL8125 2.5GbE Ethernet ports,
+	  one USB 2.0 Type-A and one USB 3.0 Type-A port, a HDMI port, a
+	  12-pin GPIO FPC connector, a fan connector, IR receiver as well
+	  as some buttons and LEDs.
+
+config TARGET_NOVA_RK3588
+	bool "Indiedroid Nova RK3588"
+	select BOARD_LATE_INIT
+	help
+	  Indiedroid Nova is a Rockchip RK3588s based SBC by Indiedroid.
+	  It comes in configurations from 4GB of RAM to 16GB of RAM,
+	  includes socket for eMMC storage, an SDMMC slot, and a 40-pin
+	  GPIO header for expansion.
+
 config TARGET_RK3588_NEU6
 	bool "Edgeble Neural Compute Module 6(Neu6) SoM"
 	select BOARD_LATE_INIT
